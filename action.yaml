@@ -26,5 +26,7 @@ runs:
       shell: bash
 
     - name: Fetch the number's square
-      uses: mock/python-action
       id: process-name
+      run: python main.py
+      shell: bash
+
