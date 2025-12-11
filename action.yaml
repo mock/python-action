@@ -22,10 +22,11 @@ runs:
     - name: Pass Inputs to Shell
       run: |
         echo "INPUT_NAME=${{ inputs.name }}" >> $GITHUB_ENV
+      shell: bash
 
     - name: Fetch the number's square
       id: process-name
-      run: python mock/python-action/main.py
+      run: python ./.github/actions/python-action/main.py
       shell: bash
 
 
