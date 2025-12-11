@@ -8,8 +8,9 @@ inputs:
     default: 'Mark'
 
 outputs:
-  processed-name: 'Processed name'
-  value: ${{ steps.process-name.outputs.processed-name }}
+  processed-name:
+    description: 'Processed name'
+    value: ${{ steps.process-name.outputs.processed-name }}
 
 runs:
   using: 'composite'
