@@ -26,7 +26,6 @@ runs:
       shell: bash
 
     - name: Fetch the number's square
-      id: process-name
       run: python main.py
-      shell: bash
+      id: process-name
 
