@@ -28,4 +28,5 @@ runs:
     - name: Fetch the number's square
       run: python main.py
       id: process-name
+      shell: bash
 
