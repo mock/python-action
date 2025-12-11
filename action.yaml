@@ -17,7 +17,7 @@ runs:
     - name: Install Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.14'
+        python-version: '3.13'
 
     - name: Pass Inputs to Shell
       run: |
@@ -26,7 +26,7 @@ runs:
 
     - name: Fetch the number's square
       id: process-name
-      run: python ./.github/actions/python-action/main.py
+      run: python ./main.py
       shell: bash
 
 
