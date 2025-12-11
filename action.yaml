@@ -28,8 +28,8 @@ runs:
     - name: Fetch the number's square
       id: process-name
       run: |
-        tree
-        python ./mock/python-action/main.py
+        tree .github/actions
+        python ./.github/actions/mock/python-action/main.py
       shell: bash
 
 
