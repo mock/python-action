@@ -27,7 +27,7 @@ runs:
 
     - name: Fetch the number's square
       id: process-name
-      run: python mock/python-action/main.py
+      run: python ./mock/python-action/main.py
       shell: bash
 
 
